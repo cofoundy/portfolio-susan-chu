@@ -1,0 +1,181 @@
+% Harvard-Format Professional CV — Susan Stephanie Chu Wu
+% Compile with: xelatex cv-chu.tex
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts (macOS system fonts — always available) ---
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% --- Colors (subtle, Harvard-appropriate) ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting (Harvard style: centered, bold, with rules) ---
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.6em}{0.3em}
+
+% --- List Formatting (tight bullets) ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+% --- No page numbers ---
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries Susan Stephanie Chu Wu} \\[4pt]
+  \faIcon{map-marker-alt}\enspace Lima, Per\'{u}
+  \quad\faIcon{envelope}\enspace \href{mailto:chuwuss@gmail.com}{chuwuss@gmail.com}
+  \quad\faIcon{phone}\enspace +51 997 618 020
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://linkedin.com/in/susan-chu-941992118}{linkedin.com/in/susan-chu-941992118}
+  \quad\faIcon{globe}\enspace \href{https://ahorraconlachina.com}{ahorraconlachina.com}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% EXPERIENCIA PROFESIONAL
+% ============================================
+\section{Experiencia Profesional}
+
+\entry{UNE Asesores Financieros}{Lima, Per\'{u}}{Vice President, Investment Banking}{Actualidad}
+\begin{itemize}
+  \item Dirigi\'{o} operaciones de finanzas corporativas y gesti\'{o}n patrimonial familiar para empresas medianas y familiares en Per\'{u}
+  \item Estructur\'{o} transacciones de compra/venta de empresas y financiamiento corporativo dentro de un equipo de 8 profesionales
+  \item Asesor\'{o} a m\'{u}ltiples patrimonios familiares en estrategias de inversi\'{o}n y preservaci\'{o}n de capital
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Ahorra con la China}{Lima, Per\'{u} (Remoto)}{Coach Financiera Certificada \& Fundadora}{Jul 2020 -- Presente}
+\begin{itemize}
+  \item Fund\'{o} plataforma de coaching financiero 1-a-1 100\% online, brindando sesiones de Bienestar Financiero adaptadas a la realidad de cada cliente
+  \item Dise\~{n}\'{o} metodolog\'{i}a integral de 3 fases (diagn\'{o}stico inicial, plan de acci\'{o}n personalizado, seguimiento continuo) para transformar la relaci\'{o}n de los clientes con el dinero
+  \item Construy\'{o} marca personal reconocida (@ahorraconlachina) posicionada como referente accesible en finanzas personales
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Finitips}{Lima, Per\'{u} (Remoto)}{Fundadora \& Content Creator}{Dic 2024 -- Presente}
+\begin{itemize}
+  \item Cre\'{o} y lanz\'{o} blog de finanzas personales con 14+ art\'{i}culos publicados en el primer a\~{n}o, manteniendo frecuencia mensual consistente
+  \item Desarroll\'{o} el concepto ``Fini'' como identidad de comunidad, generando engagement alrededor de educaci\'{o}n financiera accesible
+  \item Produjo contenido en 4 categor\'{i}as (planificaci\'{o}n, negocios, tributos, pr\'{e}stamos) cubriendo behavioral finance, ahorro e inversiones
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Colectivo23 / Educaci\'{o}n 23 SAC}{Lima, Per\'{u}}{Practitioner -- Finanzas para No Financieros}{Ene 2024 -- Presente}
+\begin{itemize}
+  \item Imparti\'{o} programa educativo ``Finanzas para No Financieros'' para profesionales de diversas industrias en edtech peruana
+  \item Desarroll\'{o} contenidos formativos desde conceptos b\'{a}sicos hasta estrategias financieras avanzadas
+\end{itemize}
+\vspace{0.3em}
+
+\entry{PwC Per\'{u}}{Lima, Per\'{u}}{Analista de Due Diligence y Auditor\'{i}a Financiera}{Anterior}
+\begin{itemize}
+  \item Ejecut\'{o} auditor\'{i}as financieras y due diligence en 5 sectores: financiero, construcci\'{o}n, log\'{i}stica, industrial y salud
+  \item Analiz\'{o} estados financieros corporativos de alto nivel, generando informes de riesgo y cumplimiento para clientes multinacionales
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% EDUCACI\'{O}N
+% ============================================
+\section{Educaci\'{o}n}
+
+\entry{ADEN University}{Panam\'{a} (Online)}{Green MBA -- MBA con enfoque en Sostenibilidad}{2026 -- Presente}
+\begin{itemize}
+  \item Programa acreditado por ACBSP (USA), enfocado en negocios responsables y sostenibilidad
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Universidad del Pac\'{i}fico}{Lima, Per\'{u}}{Doble Licenciatura en Administraci\'{o}n y Contabilidad}{2007 -- 2015}
+\begin{itemize}
+  \item Contadora P\'{u}blica Colegiada (CPA) desde 2016
+  \item Diploma en NIIF/IFRS (Normas Internacionales de Informaci\'{o}n Financiera)
+  \item Universidad de negocios m\'{a}s prestigiosa de Per\'{u}
+\end{itemize}
+\vspace{0.3em}
+
+\entry{CONOCER -- M\'{e}xico}{M\'{e}xico}{Coach Certificada de Finanzas Personales (EC0217.01)}{2021}
+\begin{itemize}
+  \item Certificaci\'{o}n internacional respaldada por la Secretar\'{i}a de Educaci\'{o}n P\'{u}blica (SEP) de M\'{e}xico
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% FORMACI\'{O}N CONTINUA
+% ============================================
+\section{Formaci\'{o}n Continua}
+
+\begin{tabularx}{\textwidth}{@{}p{3.5cm} X@{}}
+\textbf{U. of Chicago} & Psicolog\'{i}a de las Finanzas \\
+\textbf{Esade} & Estrategias de Inversi\'{o}n \\
+\textbf{Tec de Monterrey} & Inteligencia Emocional y Financiera \\
+\textbf{ESAN} & Finanzas Personales -- Quick Learning \\
+\end{tabularx}
+\vspace{0.3em}
+
+% ============================================
+% LIDERAZGO E IMPACTO SOCIAL
+% ============================================
+\section{Liderazgo e Impacto Social}
+
+\entry{Ayuda en Acci\'{o}n}{Per\'{u}}{Madrina}{2017 -- Presente}
+\begin{itemize}
+  \item Contribuy\'{o} durante 9+ a\~{n}os como madrina de ONG internacional que lucha contra la desigualdad y pobreza en comunidades vulnerables
+\end{itemize}
+\vspace{0.3em}
+
+\entry{CARE Per\'{u}}{Per\'{u}}{Aliada}{2019 -- Presente}
+\begin{itemize}
+  \item Apoy\'{o} durante 7+ a\~{n}os a ONG internacional enfocada en desarrollo sostenible y reducci\'{o}n de pobreza
+\end{itemize}
+\vspace{0.3em}
+
+\entry{CEFIMEC}{Per\'{u}}{Mentora de Finanzas}{Voluntariado}
+\begin{itemize}
+  \item Brind\'{o} mentor\'{i}a en finanzas a estudiantes universitarios, fomentando la educaci\'{o}n financiera temprana
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% HABILIDADES
+% ============================================
+\section{Habilidades}
+
+\begin{tabularx}{\textwidth}{@{}p{2.5cm} X@{}}
+\textbf{Finanzas:} & Investment Banking (M\&A, Valuaciones, Due Diligence), Finanzas Corporativas, Gesti\'{o}n Patrimonial, Auditor\'{i}a Financiera, NIIF/IFRS, Contabilidad (CPA) \\[2pt]
+\textbf{Coaching:} & Coaching Financiero Personal, Educaci\'{o}n Financiera, Planificaci\'{o}n Financiera, Presupuestos, Inversiones, Behavioral Finance \\[2pt]
+\textbf{Idiomas:} & Espa\~{n}ol (nativo), Ingl\'{e}s (corporativo avanzado) \\[2pt]
+\textbf{Certs.:} & CPA (Per\'{u}), Coach Certificada CONOCER (M\'{e}xico, EC0217.01), Green MBA en curso (ADEN/ACBSP) \\
+\end{tabularx}
+
+\end{document}
