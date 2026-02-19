@@ -4,7 +4,6 @@ export const siteConfig = {
   description: "Portfolio de Susan Chu - Coach de Finanzas Personales Certificada, fundadora de Finitips, +10 años de experiencia",
   accentColor: "#DCA54A",
   whatsapp: "+51997618020",
-  domain: "www.susanchu.com",
   social: {
     email: "hola@susanchu.com",
     linkedin: "https://linkedin.com/in/susan-chu-941992118",
