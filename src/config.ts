@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Susan Chu Wu",
-  title: "Coach Financiera Certificada",
+  title: "Coach de Finanzas Personales Certificada",
   description:
-    "Susan Chu Wu - Coach Financiera Certificada, CPA, VP en Investment Banking. Fundadora de Finitips y Ahorra con la China.",
+    "Susan Chu Wu - Coach de Finanzas Personales Certificada. Fundadora de Finitips y Ahorra con la China.",
   accentColor: "#F7D714",
   colors: {
     primaryDark: "#1a1008",
@@ -16,10 +16,10 @@ export const siteConfig = {
   tagline:
     "Te acompaño a transformar tu relación con el dinero. Sin juicio, sin estrés, a tu ritmo.",
   stats: [
-    { value: "5+", label: "Años de Coaching" },
+    { value: "10+", label: "Años de Experiencia" },
+    { value: "Fundadora", label: "Finitips" },
     { value: "14+", label: "Artículos Publicados" },
     { value: "3", label: "Plataformas" },
-    { value: "CPA", label: "Certificada" },
   ],
   quote: {
     text: "La libertad financiera es alcanzable para todos con las herramientas y acompañamiento adecuado.",
@@ -33,44 +33,22 @@ export const siteConfig = {
     whatsappNumber: "+51997618020",
   },
   social: {
-    email: "susanchu214@hotmail.com",
+    email: "info@susanchu.com",
     instagram: "https://www.instagram.com/ahorraconlachina",
     linkedin: "https://linkedin.com/in/susan-chu-941992118",
     phone: "+51 997 618 020",
   },
   aboutMe:
-    "<strong>Contadora Pública</strong> con dos licenciaturas de la <strong>Universidad del Pacífico</strong> y <strong>Coach Financiera</strong> certificada internacionalmente (<strong>CONOCER</strong>, México). Después de años en auditoría corporativa (<strong>PwC</strong>) e <strong>Investment Banking</strong> (<strong>UNE Asesores</strong>), descubrí mi verdadera pasión: empoderar a personas para que tomen el control de sus finanzas. Fundadora de <strong>Finitips</strong> y <strong>Ahorra con la China</strong>, donde acompaño a mi comunidad de 'Finis' en su camino hacia el bienestar financiero. Creo firmemente que manejar bien tu dinero no tiene que ser complicado ni estresante.",
+    "<strong>Contadora Pública</strong> con dos licenciaturas de la <strong>Universidad del Pacífico</strong> y <strong>Coach de Finanzas Personales</strong> certificada internacionalmente (<strong>CONOCER</strong>, México). Después de años en auditoría corporativa (<strong>PwC</strong>) e <strong>Investment Banking</strong> (<strong>UNE Asesores</strong>), descubrí mi verdadera pasión: empoderar a personas para que tomen el control de sus finanzas. Fundadora de <strong>Finitips</strong> y <strong>Ahorra con la China</strong>, donde acompaño a mi comunidad de 'Finis' en su camino hacia el bienestar financiero. Creo firmemente que manejar bien tu dinero no tiene que ser complicado ni estresante.",
   skills: [
     "Coaching Financiero",
     "Finanzas Personales",
-    "Investment Banking",
-    "Auditoría Financiera",
-    "Contabilidad (CPA)",
     "Educación Financiera",
     "Planificación Financiera",
     "Inversiones",
     "Presupuestos",
-    "NIIF/IFRS",
   ],
   projects: [
-    {
-      name: "Coaching de Bienestar Financiero",
-      description:
-        "Sesiones <strong>1-a-1 100% online</strong> donde te acompaño a organizar tus finanzas, crear un <strong>plan de acción personalizado</strong> y hacer seguimiento continuo. Sin juicio, adaptado a tu realidad.",
-      skills: ["Coaching 1-a-1", "Diagnóstico", "Plan de Acción"],
-    },
-    {
-      name: "Finitips",
-      description:
-        "Blog y journal de <strong>finanzas personales</strong> donde comparto reflexiones, consejos prácticos y herramientas para mi comunidad de <strong>'Finis'</strong>. Un artículo nuevo cada mes.",
-      skills: ["Blog", "Educación", "Comunidad"],
-    },
-    {
-      name: "Finanzas para No Financieros",
-      description:
-        "Programa educativo en <strong>Colectivo23</strong> donde enseño conceptos financieros desde lo básico hasta estrategias avanzadas, diseñado para <strong>profesionales no financieros</strong>.",
-      skills: ["Talleres", "Capacitación", "EdTech"],
-    },
     {
       name: "Programa Integral CFO + Coach para MYPES",
       description:
@@ -78,26 +56,28 @@ export const siteConfig = {
       skills: ["CFO", "Coaching", "MYPES", "Estrategia"],
     },
     {
-      name: "Impacto Social",
+      name: "Sesiones 1:1 de Bienestar Financiero",
       description:
-        "Madrina de <strong>Ayuda en Acción</strong> desde 2017 y aliada de <strong>CARE Perú</strong> desde 2019. Mentora en <strong>CEFIMEC</strong> para estudiantes universitarios de finanzas.",
-      skills: ["Voluntariado", "Mentoría", "ONG"],
+        "Sesiones <strong>1-a-1 100% online</strong> donde te acompaño a organizar tus finanzas, crear un <strong>plan de acción personalizado</strong> y hacer seguimiento continuo. Sin juicio, adaptado a tu realidad.",
+      skills: ["Coaching 1-a-1", "Diagnóstico", "Plan de Acción"],
+    },
+    {
+      name: "Clases Grupales",
+      description:
+        "Talleres y clases en grupo sobre <strong>finanzas personales</strong>, presupuestos, ahorro e inversión. Un espacio dinámico para aprender y compartir con otros que buscan mejorar su situación financiera.",
+      skills: ["Talleres", "Educación", "Comunidad"],
+    },
+    {
+      name: "Charlas para Empresas",
+      description:
+        "Charlas y capacitaciones de <strong>educación financiera</strong> diseñadas para equipos de trabajo y colaboradores. Conceptos prácticos desde lo básico hasta estrategias de planificación financiera.",
+      skills: ["Capacitación", "Empresas", "Educación"],
     },
   ],
   experience: [
     {
-      company: "UNE Asesores Financieros",
-      title: "Vice President, Investment Banking",
-      dateRange: "Actualidad",
-      bullets: [
-        "<strong>Investment Banking</strong> en finanzas corporativas y <strong>gestión patrimonial familiar</strong>",
-        "Compra/venta de empresas, <strong>estructuración de financiamiento</strong> y asesoría de inversiones",
-        "Análisis de transacciones para <strong>empresas familiares y medianas privadas</strong> en Perú",
-      ],
-    },
-    {
       company: "Ahorra con la China",
-      title: "Coach Financiera Certificada",
+      title: "Coach de Finanzas Personales Certificada",
       dateRange: "Jul 2020 - Presente",
       bullets: [
         "Sesiones de <strong>Bienestar Financiero 1-a-1</strong> para personas que quieren transformar su relación con el dinero",
@@ -116,9 +96,19 @@ export const siteConfig = {
       ],
     },
     {
+      company: "UNE Asesores Financieros",
+      title: "Vice President, Investment Banking",
+      dateRange: "Anterior",
+      bullets: [
+        "<strong>Investment Banking</strong> en finanzas corporativas y <strong>gestión patrimonial familiar</strong>",
+        "Compra/venta de empresas, <strong>estructuración de financiamiento</strong> y asesoría de inversiones",
+        "Análisis de transacciones para <strong>empresas familiares y medianas privadas</strong> en Perú",
+      ],
+    },
+    {
       company: "Colectivo 23 / Educación 23",
       title: "Practitioner en Finanzas",
-      dateRange: "Ene 2024 - Presente",
+      dateRange: "Anterior",
       bullets: [
         "Instructora del programa <strong>'Finanzas para No Financieros'</strong>",
         "Desarrollo de contenidos formativos desde conceptos básicos hasta <strong>estrategias avanzadas</strong>",
