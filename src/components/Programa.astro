@@ -1,206 +1,355 @@
 ---
 import { siteConfig } from "../config";
+const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
 ---
 
-<section id="programa" class="py-16 lg:py-24 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.surface}`}>
-  <div class="max-w-4xl mx-auto">
+<!-- ========== PROGRAMA — LANDING SECTION ========== -->
+<section id="programa" class="relative overflow-hidden">
 
-    <!-- Hero del programa -->
-    <div class="reveal text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight" style="color: #f1f5f9">
-        Ordena tu empresa. Ordena tu dinero. Ordena tus decisiones.
-      </h2>
-      <div class="mt-4 h-0.5 w-24 mx-auto bar-shimmer rounded-full"></div>
-      <p class="mt-6 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto" style="color: #94a3b8">
-        Si tienes una MYPE y trabajas mucho, pero no sientes tranquilidad financiera, esto es para ti.
-      </p>
-    </div>
+  <!-- ░░░ HERO OPENER ░░░ -->
+  <div class="relative py-20 lg:py-32 px-6 lg:px-8" style={`background: linear-gradient(135deg, ${siteConfig.colors.primaryDark} 0%, ${siteConfig.colors.surface} 50%, ${siteConfig.colors.primaryDark} 100%)`}>
+    <!-- Decorative grid -->
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 1px 1px, #F7D714 0.5px, transparent 0); background-size: 40px 40px;"></div>
 
-    <!-- Realidad -->
-    <div class="reveal mb-12">
-      <div class="space-y-2 text-center">
-        <p class="text-base sm:text-lg" style="color: #cbd5e1">Vender no es lo mismo que ganar.</p>
-        <p class="text-base sm:text-lg" style="color: #cbd5e1">Facturar no es lo mismo que tener caja.</p>
-        <p class="text-base sm:text-lg" style="color: #cbd5e1">Crecer sin estructura puede desordenarlo todo.</p>
-      </div>
-    </div>
-
-    <!-- El problema -->
-    <div class="reveal mb-12">
-      <h3 class="text-2xl sm:text-3xl font-bold text-center mb-6" style="color: #f1f5f9">
-        El problema que casi nadie aborda
-      </h3>
-      <p class="text-base sm:text-lg leading-relaxed text-center mb-6" style="color: #94a3b8">
-        La mayoría de programas trabajan solo una parte:
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-        <div class="flex items-center gap-3 justify-center">
-          <span style={`color: ${siteConfig.colors.accent}`}>&#x25B8;</span>
-          <span class="text-base" style="color: #cbd5e1">O el negocio</span>
-        </div>
-        <div class="flex items-center gap-3 justify-center">
-          <span style={`color: ${siteConfig.colors.accent}`}>&#x25B8;</span>
-          <span class="text-base" style="color: #cbd5e1">O las finanzas personales</span>
-        </div>
-      </div>
-      <div class="text-center space-y-2" style="color: #94a3b8">
-        <p class="text-base sm:text-lg">Pero tú eres ambos.</p>
-        <p class="text-sm leading-relaxed mt-4">
-          Si mejoras la empresa pero sigues retirando dinero sin orden,<br>
-          si creces pero no sabes cuánto capital necesitas,<br>
-          el desorden vuelve.
+    <div class="relative max-w-3xl mx-auto text-center">
+      <div class="reveal">
+        <span class="programa-badge inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6" style={`background-color: ${siteConfig.colors.accent}20; color: ${siteConfig.colors.accent}; border: 1px solid ${siteConfig.colors.accent}40`}>
+          Nuevo Programa
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight" style="color: #f1f5f9">
+          Ordena tu empresa.<br>
+          <span style={`color: ${siteConfig.colors.accent}`}>Ordena tu dinero.</span><br>
+          Ordena tus decisiones.
+        </h2>
+        <div class="mt-6 h-1 w-20 mx-auto rounded-full bar-shimmer"></div>
+        <p class="mt-8 text-lg sm:text-xl leading-relaxed max-w-xl mx-auto" style="color: #cbd5e1">
+          Si tienes una MYPE y trabajas mucho, pero no sientes tranquilidad financiera, <strong style={`color: ${siteConfig.colors.accent}`}>esto es para ti.</strong>
         </p>
       </div>
-      <div class="mt-8 text-center space-y-2">
-        <p class="text-base font-medium" style="color: #cbd5e1">Mi enfoque es simple:</p>
-        <p class="text-base" style={`color: ${siteConfig.colors.accent}`}>&#x1F449; Ordenamos la empresa.</p>
-        <p class="text-base" style={`color: ${siteConfig.colors.accent}`}>&#x1F449; Ordenamos al dueño/a.</p>
-        <p class="text-base font-semibold mt-2" style="color: #f1f5f9">Eso es estratégico.</p>
-      </div>
     </div>
-
-    <!-- Programa -->
-    <div class="reveal mb-12">
-      <h3 class="text-2xl sm:text-3xl font-bold text-center mb-8" style="color: #f1f5f9">
-        Programa Integral CFO + Coach para MYPES
-      </h3>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- CFO Sessions -->
-        <div class="p-6 rounded-xl border" style={`background-color: ${siteConfig.colors.primary}; border-color: ${siteConfig.colors.primaryLight}`}>
-          <h4 class="text-lg font-bold mb-4" style={`color: ${siteConfig.colors.accent}`}>3 sesiones como CFO</h4>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Flujo de caja proyectado</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Capital de trabajo real</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Punto de equilibrio</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Margen real</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Claridad sobre cuánto puedes retirarte</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Personal Sessions -->
-        <div class="p-6 rounded-xl border" style={`background-color: ${siteConfig.colors.primary}; border-color: ${siteConfig.colors.primaryLight}`}>
-          <h4 class="text-lg font-bold mb-4" style={`color: ${siteConfig.colors.accent}`}>3 sesiones personales</h4>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Separación empresa / persona</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Retiro mensual sostenible</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Orden financiero personal</span>
-            </li>
-            <li class="flex items-start">
-              <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-              <span class="text-sm" style="color: #94a3b8">Metas claras</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Qué te llevas -->
-    <div class="reveal mb-12">
-      <h3 class="text-2xl sm:text-3xl font-bold text-center mb-6" style="color: #f1f5f9">
-        Qué te llevas
-      </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto">
-        <div class="flex items-start gap-3">
-          <span style={`color: ${siteConfig.colors.accent}`}>&#x2714;</span>
-          <span class="text-sm" style="color: #cbd5e1">Claridad real sobre cuánto ganas</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <span style={`color: ${siteConfig.colors.accent}`}>&#x2714;</span>
-          <span class="text-sm" style="color: #cbd5e1">Decisiones basadas en números</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <span style={`color: ${siteConfig.colors.accent}`}>&#x2714;</span>
-          <span class="text-sm" style="color: #cbd5e1">Menos improvisación</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <span style={`color: ${siteConfig.colors.accent}`}>&#x2714;</span>
-          <span class="text-sm" style="color: #cbd5e1">Más tranquilidad financiera</span>
-        </div>
-      </div>
-      <div class="text-center mt-8 space-y-1">
-        <p class="text-base" style="color: #94a3b8">No prometo magia.</p>
-        <p class="text-base font-semibold" style="color: #f1f5f9">Prometo estructura.</p>
-      </div>
-    </div>
-
-    <!-- Inversión -->
-    <div class="reveal mb-12">
-      <h3 class="text-2xl sm:text-3xl font-bold text-center mb-6" style="color: #f1f5f9">
-        ¿Es una inversión?
-      </h3>
-      <p class="text-center text-lg font-semibold mb-6" style="color: #f1f5f9">Sí.</p>
-      <p class="text-center text-2xl font-bold mb-8" style={`color: ${siteConfig.colors.accent}`}>
-        La inversión es USD 2,280.
-      </p>
-      <div class="text-center space-y-2 mb-8" style="color: #94a3b8">
-        <p class="text-sm">Pero piensa en esto con honestidad:</p>
-        <div class="space-y-1 mt-4">
-          <p class="text-sm">Un mal cálculo de precios.</p>
-          <p class="text-sm">Un préstamo mal tomado.</p>
-          <p class="text-sm">Una expansión sin capital suficiente.</p>
-          <p class="text-sm">Un año retirando dinero sin estructura.</p>
-        </div>
-        <p class="text-sm font-medium mt-4" style="color: #cbd5e1">Eso cuesta mucho más.</p>
-      </div>
-      <div class="text-center space-y-1">
-        <p class="text-sm" style="color: #94a3b8">Esto no es un gasto.</p>
-        <p class="text-base font-semibold" style="color: #f1f5f9">Es evitar errores costosos y ganar claridad.</p>
-      </div>
-    </div>
-
-    <!-- CTA del programa -->
-    <div class="reveal text-center">
-      <h3 class="text-2xl sm:text-3xl font-bold mb-4" style="color: #f1f5f9">
-        Si todo esto resonó contigo
-      </h3>
-      <p class="text-base mb-2" style="color: #94a3b8">
-        Agenda una sesión estratégica gratuita de 30 minutos.
-      </p>
-      <p class="text-sm mb-8 max-w-lg mx-auto" style="color: #94a3b8">
-        Es un espacio para entender tu situación actual y ver si este proceso tiene sentido para ti.<br><br>
-        Sin presión.<br>
-        Sin venta agresiva.<br>
-        Con claridad.<br><br>
-        Si encajamos, avanzamos.<br>
-        Si no, al menos te llevas claridad.
-      </p>
-      <a
-        href={`https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-hover inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-semibold text-white"
-        style={`background-color: ${siteConfig.colors.accent}`}
-      >
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        Agenda tu sesión aquí
-      </a>
-    </div>
-
   </div>
+
+  <!-- ░░░ PAIN POINTS — Strikethrough Style ░░░ -->
+  <div class="py-16 lg:py-20 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.primaryDark}`}>
+    <div class="max-w-3xl mx-auto">
+      <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        {[
+          { icon: "📊", line1: "Vender", line2: "no es lo mismo que", accent: "ganar" },
+          { icon: "🧾", line1: "Facturar", line2: "no es lo mismo que", accent: "tener caja" },
+          { icon: "📈", line1: "Crecer sin estructura", line2: "puede", accent: "desordenarlo todo" },
+        ].map((item, i) => (
+          <div
+            class="reveal-scale programa-pain-card group p-6 rounded-2xl border transition-all duration-300"
+            style={`background-color: ${siteConfig.colors.primary}; border-color: ${siteConfig.colors.primaryLight}; transition-delay: ${i * 0.1}s`}
+          >
+            <div class="text-3xl mb-4">{item.icon}</div>
+            <p class="text-sm font-medium" style="color: #94a3b8">
+              {item.line1}<br>{item.line2}
+            </p>
+            <p class="text-lg font-bold mt-1" style={`color: ${siteConfig.colors.accent}`}>{item.accent}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ THE PROBLEM ░░░ -->
+  <div class="py-16 lg:py-20 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.surface}`}>
+    <div class="max-w-3xl mx-auto">
+      <div class="reveal text-center mb-10">
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color: #f1f5f9">
+          El problema que <span style={`color: ${siteConfig.colors.accent}`}>casi nadie</span> aborda
+        </h3>
+      </div>
+
+      <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto mb-10">
+        <div class="p-5 rounded-xl border text-center" style={`background-color: ${siteConfig.colors.primary}; border-color: #CC4B4340`}>
+          <div class="text-2xl mb-2">🏢</div>
+          <p class="text-sm font-medium" style="color: #94a3b8">Solo trabajan</p>
+          <p class="text-base font-bold" style="color: #CC4B43">el negocio</p>
+        </div>
+        <div class="p-5 rounded-xl border text-center" style={`background-color: ${siteConfig.colors.primary}; border-color: #CC4B4340`}>
+          <div class="text-2xl mb-2">💰</div>
+          <p class="text-sm font-medium" style="color: #94a3b8">Solo trabajan</p>
+          <p class="text-base font-bold" style="color: #CC4B43">las finanzas personales</p>
+        </div>
+      </div>
+
+      <div class="reveal text-center">
+        <p class="text-xl sm:text-2xl font-bold mb-4" style="color: #f1f5f9">
+          Pero tú eres <span class="underline decoration-2" style={`text-decoration-color: ${siteConfig.colors.accent}; color: ${siteConfig.colors.accent}`}>ambos.</span>
+        </p>
+        <p class="text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-8" style="color: #94a3b8">
+          Si mejoras la empresa pero sigues retirando dinero sin orden, si creces pero no sabes cuánto capital necesitas, el desorden vuelve.
+        </p>
+
+        <!-- Enfoque -->
+        <div class="inline-block p-6 rounded-2xl border" style={`background: linear-gradient(135deg, ${siteConfig.colors.primary}, ${siteConfig.colors.primaryLight}); border-color: ${siteConfig.colors.accent}30`}>
+          <p class="text-sm font-medium mb-3" style="color: #94a3b8">Mi enfoque es simple:</p>
+          <div class="space-y-2">
+            <p class="text-base sm:text-lg font-semibold" style={`color: ${siteConfig.colors.accent}`}>
+              👉 Ordenamos la empresa.
+            </p>
+            <p class="text-base sm:text-lg font-semibold" style={`color: ${siteConfig.colors.accent}`}>
+              👉 Ordenamos al dueño/a.
+            </p>
+          </div>
+          <div class="mt-4 h-0.5 w-12 mx-auto rounded-full bar-shimmer"></div>
+          <p class="mt-3 text-lg font-bold" style="color: #f1f5f9">Eso es estratégico.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ THE PROGRAM — Cards ░░░ -->
+  <div class="py-16 lg:py-24 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.primaryDark}`}>
+    <div class="max-w-4xl mx-auto">
+      <div class="reveal text-center mb-12">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4" style={`background-color: ${siteConfig.colors.accent}15; color: ${siteConfig.colors.accent}`}>
+          El Programa
+        </span>
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color: #f1f5f9">
+          Programa Integral<br>
+          <span style={`color: ${siteConfig.colors.accent}`}>CFO + Coach</span> para MYPES
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- CFO Card -->
+        <div class="reveal-left programa-session-card relative p-8 rounded-2xl border overflow-hidden" style={`background: linear-gradient(180deg, ${siteConfig.colors.primary} 0%, ${siteConfig.colors.primaryDark} 100%); border-color: ${siteConfig.colors.accent}25`}>
+          <div class="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={`background: linear-gradient(90deg, ${siteConfig.colors.accent}, transparent)`}></div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl" style={`background-color: ${siteConfig.colors.accent}15`}>
+              📋
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest font-bold" style={`color: ${siteConfig.colors.accent}`}>Empresa</p>
+              <h4 class="text-xl font-bold" style="color: #f1f5f9">3 sesiones como CFO</h4>
+            </div>
+          </div>
+          <ul class="space-y-4">
+            {["Flujo de caja proyectado", "Capital de trabajo real", "Punto de equilibrio", "Margen real", "Claridad sobre cuánto puedes retirarte"].map((item) => (
+              <li class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}15`}>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke={siteConfig.colors.accent} viewBox="0 0 24 24" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-sm sm:text-base" style="color: #cbd5e1">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Personal Card -->
+        <div class="reveal-right programa-session-card relative p-8 rounded-2xl border overflow-hidden" style={`background: linear-gradient(180deg, ${siteConfig.colors.primary} 0%, ${siteConfig.colors.primaryDark} 100%); border-color: ${siteConfig.colors.accent}25`}>
+          <div class="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={`background: linear-gradient(90deg, transparent, ${siteConfig.colors.accent})`}></div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl" style={`background-color: ${siteConfig.colors.accent}15`}>
+              🧠
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest font-bold" style={`color: ${siteConfig.colors.accent}`}>Personal</p>
+              <h4 class="text-xl font-bold" style="color: #f1f5f9">3 sesiones personales</h4>
+            </div>
+          </div>
+          <ul class="space-y-4">
+            {["Separación empresa / persona", "Retiro mensual sostenible", "Orden financiero personal", "Metas claras"].map((item) => (
+              <li class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}15`}>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke={siteConfig.colors.accent} viewBox="0 0 24 24" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-sm sm:text-base" style="color: #cbd5e1">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ RESULTS — What you get ░░░ -->
+  <div class="py-16 lg:py-20 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.surface}`}>
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="reveal mb-10">
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color: #f1f5f9">
+          Qué te llevas
+        </h3>
+        <div class="mt-3 h-0.5 w-16 mx-auto bar-shimmer rounded-full"></div>
+      </div>
+
+      <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10">
+        {[
+          { icon: "🔍", text: "Claridad real sobre cuánto ganas" },
+          { icon: "📐", text: "Decisiones basadas en números" },
+          { icon: "🎯", text: "Menos improvisación" },
+          { icon: "🧘", text: "Más tranquilidad financiera" },
+        ].map((item, i) => (
+          <div
+            class="reveal-scale programa-result-card flex items-center gap-4 p-5 rounded-xl border text-left"
+            style={`background-color: ${siteConfig.colors.primary}; border-color: ${siteConfig.colors.primaryLight}; transition-delay: ${i * 0.08}s`}
+          >
+            <div class="text-2xl flex-shrink-0">{item.icon}</div>
+            <span class="text-sm sm:text-base font-medium" style="color: #cbd5e1">{item.text}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="reveal">
+        <p class="text-base" style="color: #64748b">No prometo magia.</p>
+        <p class="text-xl sm:text-2xl font-bold mt-1" style="color: #f1f5f9">Prometo <span style={`color: ${siteConfig.colors.accent}`}>estructura.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ INVESTMENT — Price Anchor ░░░ -->
+  <div class="py-16 lg:py-24 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.primaryDark}`}>
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="reveal">
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6" style="color: #f1f5f9">
+          ¿Es una inversión?
+        </h3>
+        <p class="text-xl font-semibold mb-8" style="color: #f1f5f9">Sí.</p>
+
+        <!-- Price card -->
+        <div class="programa-price-card inline-block relative p-8 sm:p-10 rounded-2xl border mb-10" style={`background: linear-gradient(135deg, ${siteConfig.colors.primary}, ${siteConfig.colors.surface}); border-color: ${siteConfig.colors.accent}30`}>
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest" style={`background-color: ${siteConfig.colors.accent}; color: ${siteConfig.colors.primaryDark}`}>
+            6 sesiones
+          </div>
+          <p class="text-4xl sm:text-5xl font-bold mt-2" style={`color: ${siteConfig.colors.accent}`}>
+            USD 2,280
+          </p>
+          <p class="text-xs mt-2 uppercase tracking-wider" style="color: #64748b">CFO + Coach integral</p>
+        </div>
+      </div>
+
+      <!-- Cost comparison -->
+      <div class="reveal">
+        <p class="text-sm font-medium mb-6" style="color: #94a3b8">Pero piensa en esto con honestidad:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto mb-8">
+          {[
+            "Un mal cálculo de precios",
+            "Un préstamo mal tomado",
+            "Una expansión sin capital suficiente",
+            "Un año retirando dinero sin estructura",
+          ].map((item) => (
+            <div class="flex items-center gap-2 p-3 rounded-lg" style={`background-color: ${siteConfig.colors.primary}`}>
+              <span class="text-base" style="color: #CC4B43">✕</span>
+              <span class="text-xs sm:text-sm" style="color: #94a3b8">{item}</span>
+            </div>
+          ))}
+        </div>
+        <p class="text-base font-bold mb-2" style="color: #cbd5e1">Eso cuesta mucho más.</p>
+        <p class="text-sm" style="color: #64748b">Esto no es un gasto.</p>
+        <p class="text-lg font-bold mt-1" style="color: #f1f5f9">Es evitar errores costosos y ganar <span style={`color: ${siteConfig.colors.accent}`}>claridad.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ FINAL CTA — Conversion ░░░ -->
+  <div class="relative py-20 lg:py-28 px-6 lg:px-8" style={`background: linear-gradient(180deg, ${siteConfig.colors.surface} 0%, ${siteConfig.colors.primaryDark} 100%)`}>
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 1px 1px, #F7D714 0.5px, transparent 0); background-size: 32px 32px;"></div>
+
+    <div class="relative max-w-2xl mx-auto text-center">
+      <div class="reveal">
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4" style="color: #f1f5f9">
+          Si todo esto <span style={`color: ${siteConfig.colors.accent}`}>resonó contigo</span>
+        </h3>
+        <p class="text-lg sm:text-xl font-medium mb-2" style="color: #cbd5e1">
+          Agenda una sesión estratégica gratuita de 30 minutos.
+        </p>
+        <p class="text-sm leading-relaxed max-w-md mx-auto mb-4" style="color: #94a3b8">
+          Es un espacio para entender tu situación actual y ver si este proceso tiene sentido para ti.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+          {["Sin presión", "Sin venta agresiva", "Con claridad"].map((item) => (
+            <span class="px-3 py-1.5 rounded-full text-xs font-medium border" style={`border-color: ${siteConfig.colors.accent}30; color: ${siteConfig.colors.accent}`}>
+              {item}
+            </span>
+          ))}
+        </div>
+
+        <p class="text-sm mb-8" style="color: #94a3b8">
+          Si encajamos, avanzamos. Si no, al menos te llevas claridad.
+        </p>
+
+        <a
+          href={wa}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="programa-cta-btn btn-hover inline-flex items-center gap-3 px-10 py-5 rounded-full text-lg font-bold text-white shadow-2xl"
+          style={`background: linear-gradient(135deg, ${siteConfig.colors.accent}, #e6c412); color: ${siteConfig.colors.primaryDark}`}
+        >
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Agenda tu sesión aquí
+        </a>
+      </div>
+    </div>
+  </div>
+
 </section>
+
+<style>
+  /* Session cards glow on hover */
+  .programa-session-card {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease;
+  }
+  .programa-session-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(247, 215, 20, 0.1);
+    border-color: rgba(247, 215, 20, 0.4) !important;
+  }
+
+  /* Result cards */
+  .programa-result-card {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.25s ease;
+  }
+  .programa-result-card:hover {
+    transform: scale(1.03);
+  }
+
+  /* Pain cards */
+  .programa-pain-card {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.25s ease;
+  }
+  .programa-pain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(247, 215, 20, 0.08);
+  }
+
+  /* Price card glow pulse */
+  .programa-price-card {
+    animation: priceGlow 3s ease-in-out infinite;
+  }
+  @keyframes priceGlow {
+    0%, 100% { box-shadow: 0 0 30px rgba(247, 215, 20, 0.05); }
+    50% { box-shadow: 0 0 50px rgba(247, 215, 20, 0.15); }
+  }
+
+  /* CTA button pulse */
+  .programa-cta-btn {
+    animation: ctaPulse 2s ease-in-out infinite;
+  }
+  @keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 8px 30px rgba(247, 215, 20, 0.3); }
+    50% { box-shadow: 0 12px 50px rgba(247, 215, 20, 0.5); }
+  }
+
+  /* Badge entrance */
+  .programa-badge {
+    animation: badgePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+  }
+  @keyframes badgePop {
+    from { opacity: 0; transform: scale(0.8) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+</style>
