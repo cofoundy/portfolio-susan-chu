@@ -125,7 +125,7 @@ h1, h2, h3, h4 {
   100% { background-position: 200% 0; }
 }
 .bar-shimmer {
-  background: linear-gradient(90deg, #111827 0%, #DCA54A 25%, #111827 50%, #DCA54A 75%, #111827 100%);
+  background: linear-gradient(90deg, #1a1008 0%, #F7D714 25%, #1a1008 50%, #F7D714 75%, #1a1008 100%);
   background-size: 200% 100%;
   animation: shimmer 12s linear infinite;
 }

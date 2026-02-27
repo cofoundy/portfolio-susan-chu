@@ -3,14 +3,15 @@ export const siteConfig = {
   title: "Coach Financiera Certificada",
   description:
     "Susan Chu Wu - Coach Financiera Certificada, CPA, VP en Investment Banking. Fundadora de Finitips y Ahorra con la China.",
-  accentColor: "#DCA54A",
+  accentColor: "#F7D714",
   colors: {
-    primaryDark: "#0F172A",
-    primary: "#1a2332",
-    primaryLight: "#253244",
-    accent: "#DCA54A",
-    surface: "#141e2e",
-    surfaceLight: "#1c2a3c",
+    primaryDark: "#1a1008",
+    primary: "#2a1e10",
+    primaryLight: "#3d2e1a",
+    accent: "#F7D714",
+    accentSecondary: "#CC4B43",
+    surface: "#221810",
+    surfaceLight: "#2e2014",
   },
   tagline:
     "Te acompaño a transformar tu relación con el dinero. Sin juicio, sin estrés, a tu ritmo.",
@@ -25,10 +26,10 @@ export const siteConfig = {
     author: "Susan Chu",
   },
   cta: {
-    title: "¿Lista para transformar tus finanzas?",
+    title: "¿Listo/a para ordenar tu empresa y tus finanzas?",
     description:
-      "Ya sea que busques salir de deudas, organizar tu presupuesto o empezar a invertir — agenda una sesión de Bienestar Financiero conmigo. Sin juicio, adaptada a tu realidad.",
-    buttonText: "Agenda tu sesión",
+      "Si tienes una MYPE y quieres dejar de improvisar con el dinero — tanto en tu negocio como en tu vida personal — agenda una sesión estratégica conmigo.\n\nUn espacio claro, sin juicio y adaptado a tu realidad, donde veremos cómo estructurar tu empresa y tu dinero de forma sostenible.\n\nAgenda tu sesión estratégica gratuita de 30 minutos.",
+    buttonText: "Agenda aquí tu sesión",
     whatsappNumber: "+51997618020",
   },
   social: {
@@ -38,7 +39,7 @@ export const siteConfig = {
     phone: "+51 997 618 020",
   },
   aboutMe:
-    "<strong>Contadora Pública</strong> con doble licenciatura de la <strong>Universidad del Pacífico</strong> y <strong>Coach Financiera</strong> certificada internacionalmente (<strong>CONOCER</strong>, México). Después de años en auditoría corporativa (<strong>PwC</strong>) e <strong>Investment Banking</strong> (<strong>UNE Asesores</strong>), descubrí mi verdadera pasión: empoderar a personas para que tomen el control de sus finanzas. Fundadora de <strong>Finitips</strong> y <strong>Ahorra con la China</strong>, donde acompaño a mi comunidad de 'Finis' en su camino hacia el bienestar financiero. Creo firmemente que manejar bien tu dinero no tiene que ser complicado ni estresante.",
+    "<strong>Contadora Pública</strong> con dos licenciaturas de la <strong>Universidad del Pacífico</strong> y <strong>Coach Financiera</strong> certificada internacionalmente (<strong>CONOCER</strong>, México). Después de años en auditoría corporativa (<strong>PwC</strong>) e <strong>Investment Banking</strong> (<strong>UNE Asesores</strong>), descubrí mi verdadera pasión: empoderar a personas para que tomen el control de sus finanzas. Fundadora de <strong>Finitips</strong> y <strong>Ahorra con la China</strong>, donde acompaño a mi comunidad de 'Finis' en su camino hacia el bienestar financiero. Creo firmemente que manejar bien tu dinero no tiene que ser complicado ni estresante.",
   skills: [
     "Coaching Financiero",
     "Finanzas Personales",
@@ -69,6 +70,12 @@ export const siteConfig = {
       description:
         "Programa educativo en <strong>Colectivo23</strong> donde enseño conceptos financieros desde lo básico hasta estrategias avanzadas, diseñado para <strong>profesionales no financieros</strong>.",
       skills: ["Talleres", "Capacitación", "EdTech"],
+    },
+    {
+      name: "Programa Integral CFO + Coach para MYPES",
+      description:
+        "Acompañamiento integral para dueños de <strong>MYPES</strong>: 3 sesiones como <strong>CFO</strong> (flujo de caja, punto de equilibrio, margen real) + 3 sesiones <strong>personales</strong> (separación empresa/persona, retiro sostenible, metas claras).",
+      skills: ["CFO", "Coaching", "MYPES", "Estrategia"],
     },
     {
       name: "Impacto Social",
@@ -142,7 +149,7 @@ export const siteConfig = {
       degree: "Licenciatura en Administración y Contabilidad",
       dateRange: "2007 - 2015",
       achievements: [
-        "<strong>Doble carrera</strong>: Administración y Contabilidad",
+        "<strong>Dos carreras</strong>: Administración y Contabilidad",
         "<strong>Contadora Pública Colegiada</strong> (2016)",
         "Diploma en <strong>NIIF/IFRS</strong>",
       ],
@@ -165,6 +172,7 @@ export const siteConfig = {
         "Estrategias de Inversión - <strong>Esade Business School</strong>",
         "Inteligencia Emocional y Financiera - <strong>Tec de Monterrey</strong>",
         "Finanzas Personales - <strong>ESAN</strong> Quick Learning",
+        "Capacitación en Finanzas Personales - <strong>Centro Cultural PUCP</strong>",
       ],
     },
   ],
