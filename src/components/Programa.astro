@@ -13,17 +13,13 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
 
     <div class="relative max-w-3xl mx-auto text-center">
       <div class="reveal">
-        <span class="programa-badge inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6" style={`background-color: ${siteConfig.colors.accent}20; color: ${siteConfig.colors.accent}; border: 1px solid ${siteConfig.colors.accent}40`}>
-          Programa
-        </span>
         <h2 class="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight" style="color: #f1f5f9">
-          Ordena tu empresa.<br>
           <span style={`color: ${siteConfig.colors.accent}`}>Ordena tu dinero.</span><br>
           Ordena tus decisiones.
         </h2>
         <div class="mt-6 h-1 w-20 mx-auto rounded-full bar-shimmer"></div>
         <p class="mt-8 text-lg sm:text-xl leading-relaxed max-w-xl mx-auto" style="color: #cbd5e1">
-          Si tienes una MYPE y trabajas mucho, pero no sientes tranquilidad financiera, <strong style={`color: ${siteConfig.colors.accent}`}>esto es para ti.</strong>
+          No importa si diriges un negocio o solo administras tus propias finanzas. Si no sientes tranquilidad financiera, <strong style={`color: ${siteConfig.colors.accent}`}>esto es para ti.</strong>
         </p>
       </div>
     </div>
@@ -35,7 +31,7 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
       <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         {[
           { icon: "📊", line1: "Vender", line2: "no es lo mismo que", accent: "ganar" },
-          { icon: "🧾", line1: "Facturar", line2: "no es lo mismo que", accent: "tener caja" },
+          { icon: "🧾", line1: "Ganar más", line2: "no es lo mismo que", accent: "tener libertad financiera" },
           { icon: "📈", line1: "Crecer sin estructura", line2: "puede", accent: "desordenarlo todo" },
         ].map((item, i) => (
           <div
@@ -58,44 +54,92 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
     <div class="max-w-3xl mx-auto">
       <div class="reveal text-center mb-10">
         <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color: #f1f5f9">
-          El problema que <span style={`color: ${siteConfig.colors.accent}`}>casi nadie</span> aborda
+          El problema es que <span style={`color: ${siteConfig.colors.accent}`}>casi nadie</span> aborda ambos frentes
         </h3>
       </div>
 
-      <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto mb-10">
-        <div class="p-5 rounded-xl border text-center" style={`background-color: ${siteConfig.colors.primary}; border-color: #CC4B4340`}>
+      <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-10">
+        <div class="p-5 rounded-xl border text-center flex-1 w-full" style={`background-color: ${siteConfig.colors.primary}; border-color: #CC4B4340`}>
           <div class="text-2xl mb-2">🏢</div>
-          <p class="text-sm font-medium" style="color: #94a3b8">Solo trabajan</p>
+          <p class="text-sm font-medium" style="color: #94a3b8">O se enfocan solo en</p>
           <p class="text-base font-bold" style="color: #CC4B43">el negocio</p>
         </div>
-        <div class="p-5 rounded-xl border text-center" style={`background-color: ${siteConfig.colors.primary}; border-color: #CC4B4340`}>
+        <div class="text-lg font-bold" style={`color: ${siteConfig.colors.accent}`}>O</div>
+        <div class="p-5 rounded-xl border text-center flex-1 w-full" style={`background-color: ${siteConfig.colors.primary}; border-color: #CC4B4340`}>
           <div class="text-2xl mb-2">💰</div>
-          <p class="text-sm font-medium" style="color: #94a3b8">Solo trabajan</p>
+          <p class="text-sm font-medium" style="color: #94a3b8">Solo en</p>
           <p class="text-base font-bold" style="color: #CC4B43">las finanzas personales</p>
         </div>
       </div>
 
-      <div class="reveal text-center">
-        <p class="text-xl sm:text-2xl font-bold mb-4" style="color: #f1f5f9">
-          Pero tú eres <span class="underline decoration-2" style={`text-decoration-color: ${siteConfig.colors.accent}; color: ${siteConfig.colors.accent}`}>ambos.</span>
-        </p>
-        <p class="text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-8" style="color: #94a3b8">
-          Si mejoras la empresa pero sigues retirando dinero sin orden, si creces pero no sabes cuánto capital necesitas, el desorden vuelve.
-        </p>
+      <!-- El vacío incómodo — texto largo editorial -->
+      <div class="reveal max-w-2xl mx-auto">
+        <h4 class="text-2xl sm:text-3xl font-bold mb-8 text-center" style="color: #f1f5f9">
+          El vacío <span style={`color: ${siteConfig.colors.accent}`}>incómodo</span>
+        </h4>
 
-        <!-- Enfoque -->
-        <div class="inline-block p-6 rounded-2xl border" style={`background: linear-gradient(135deg, ${siteConfig.colors.primary}, ${siteConfig.colors.primaryLight}); border-color: ${siteConfig.colors.accent}30`}>
-          <p class="text-sm font-medium mb-3" style="color: #94a3b8">Mi enfoque es simple:</p>
-          <div class="space-y-2">
-            <p class="text-base sm:text-lg font-semibold" style={`color: ${siteConfig.colors.accent}`}>
-              👉 Ordenamos la empresa.
-            </p>
-            <p class="text-base sm:text-lg font-semibold" style={`color: ${siteConfig.colors.accent}`}>
-              👉 Ordenamos al dueño/a.
-            </p>
+        <div class="space-y-6 text-base sm:text-lg leading-relaxed text-left" style="color: #cbd5e1">
+          <p>
+            Si eres pequeño/a, <span style={`color: ${siteConfig.colors.accent}`}>no eres prioridad</span> para la gran consultora.<br>
+            El esfuerzo es el mismo. <span style={`color: ${siteConfig.colors.accent}`}>El ticket no</span>.
+          </p>
+
+          <p>
+            Si buscas ayuda en finanzas personales, muchas veces <span style={`color: ${siteConfig.colors.accent}`}>no te atiende un financiero</span>.<br>
+            Te atiende alguien que sobrevivió a su caos… y ahora enseña lo que le funcionó.
+          </p>
+
+          <p>
+            Pero tú no eres solo una empresa.<br>
+            Y tampoco eres solo una persona con deudas o metas.
+          </p>
+
+          <p class="text-xl sm:text-2xl font-bold" style="color: #f1f5f9">
+            Eres <span style={`color: ${siteConfig.colors.accent}`}>las dos</span>.
+          </p>
+
+          <p>
+            Y no por separado, sino como <span style={`color: ${siteConfig.colors.accent}`}>un solo sistema</span>.
+          </p>
+
+          <p>
+            Porque cuando estás a cargo — de un negocio, de una familia o de ambos:
+          </p>
+
+          <div class="pl-4 border-l-2 space-y-2" style={`border-color: ${siteConfig.colors.accent}40`}>
+            <p>Tu ingreso impacta <strong style={`color: ${siteConfig.colors.accent}`}>la caja</strong>, el dinero disponible.</p>
+            <p>La caja impacta <strong style={`color: ${siteConfig.colors.accent}`}>el crecimiento</strong>.</p>
+            <p>El crecimiento redefine las <strong style={`color: ${siteConfig.colors.accent}`}>decisiones financieras</strong>.</p>
+            <p>Las decisiones financieras impactan <strong style={`color: ${siteConfig.colors.accent}`}>tu vida personal</strong>.</p>
+            <p>Y tu vida personal vuelve a impactarlo <strong style={`color: ${siteConfig.colors.accent}`}>todo</strong>.</p>
           </div>
-          <div class="mt-4 h-0.5 w-12 mx-auto rounded-full bar-shimmer"></div>
-          <p class="mt-3 text-lg font-bold" style="color: #f1f5f9">Eso es estratégico.</p>
+
+          <p class="text-xl font-bold" style="color: #f1f5f9">
+            Es un circuito.
+          </p>
+
+          <p>
+            Eso es <span class="text-xl font-bold" style={`color: ${siteConfig.colors.accent}`}>integral</span>.
+          </p>
+
+          <p>
+            Y mientras sigas resolviendo una mitad, la otra te va a sabotear.
+          </p>
+
+          <p style="color: #94a3b8">
+            Por eso casi nadie trabaja así.<br>
+            Porque exige formación sólida para entender las dos conversaciones al mismo tiempo.<br>
+            Y experiencia para sostenerlas.
+          </p>
+
+          <p style="color: #94a3b8">
+            Integral no es una palabra bonita.<br>
+            Es una <span style="color: #f1f5f9">responsabilidad</span>.
+          </p>
+
+          <p class="text-center text-xl font-bold mt-8" style="color: #f1f5f9">
+            Si quieres hacerlo completo, <a href={wa} target="_blank" rel="noopener noreferrer" class="underline decoration-2 transition-colors hover:opacity-80" style={`color: ${siteConfig.colors.accent}; text-decoration-color: ${siteConfig.colors.accent}`}>conversemos</a>.
+          </p>
         </div>
       </div>
     </div>
@@ -105,13 +149,12 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
   <div class="py-16 lg:py-24 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.primaryDark}`}>
     <div class="max-w-4xl mx-auto">
       <div class="reveal text-center mb-12">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4" style={`background-color: ${siteConfig.colors.accent}15; color: ${siteConfig.colors.accent}`}>
-          El Programa
-        </span>
         <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color: #f1f5f9">
-          Programa Integral<br>
-          <span style={`color: ${siteConfig.colors.accent}`}>CFO + Coach</span> para MYPES
+          <span style={`color: ${siteConfig.colors.accent}`}>Gestión Financiera</span> Integral
         </h3>
+        <p class="mt-4 text-base sm:text-lg leading-relaxed max-w-xl mx-auto" style="color: #94a3b8">
+          Ordena tu vida financiera sin afectar tu negocio — y haz que tu negocio crezca sin desordenar tus finanzas personales.
+        </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -124,7 +167,7 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
             </div>
             <div>
               <p class="text-xs uppercase tracking-widest font-bold" style={`color: ${siteConfig.colors.accent}`}>Empresa</p>
-              <h4 class="text-xl font-bold" style="color: #f1f5f9">3 sesiones como CFO</h4>
+              <h4 class="text-xl font-bold" style="color: #f1f5f9">Sesiones para ordenar las finanzas de tu negocio</h4>
             </div>
           </div>
           <ul class="space-y-4">
@@ -150,7 +193,7 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
             </div>
             <div>
               <p class="text-xs uppercase tracking-widest font-bold" style={`color: ${siteConfig.colors.accent}`}>Personal</p>
-              <h4 class="text-xl font-bold" style="color: #f1f5f9">3 sesiones personales</h4>
+              <h4 class="text-xl font-bold" style="color: #f1f5f9">Sesiones de finanzas personales</h4>
             </div>
           </div>
           <ul class="space-y-4">
@@ -200,50 +243,6 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
       <div class="reveal">
         <p class="text-base" style="color: #64748b">No prometo magia.</p>
         <p class="text-xl sm:text-2xl font-bold mt-1" style="color: #f1f5f9">Prometo <span style={`color: ${siteConfig.colors.accent}`}>estructura.</span></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ░░░ INVESTMENT — Price Anchor ░░░ -->
-  <div class="py-16 lg:py-24 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.primaryDark}`}>
-    <div class="max-w-2xl mx-auto text-center">
-      <div class="reveal">
-        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6" style="color: #f1f5f9">
-          ¿Es una inversión?
-        </h3>
-        <p class="text-xl font-semibold mb-8" style="color: #f1f5f9">Sí.</p>
-
-        <!-- Price card -->
-        <div class="programa-price-card inline-block relative p-8 sm:p-10 rounded-2xl border mb-10" style={`background: linear-gradient(135deg, ${siteConfig.colors.primary}, ${siteConfig.colors.surface}); border-color: ${siteConfig.colors.accent}30`}>
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest" style={`background-color: ${siteConfig.colors.accent}; color: ${siteConfig.colors.primaryDark}`}>
-            6 sesiones
-          </div>
-          <p class="text-4xl sm:text-5xl font-bold mt-2" style={`color: ${siteConfig.colors.accent}`}>
-            USD 2,280
-          </p>
-          <p class="text-xs mt-2 uppercase tracking-wider" style="color: #64748b">CFO + Coach integral</p>
-        </div>
-      </div>
-
-      <!-- Cost comparison -->
-      <div class="reveal">
-        <p class="text-sm font-medium mb-6" style="color: #94a3b8">Pero piensa en esto con honestidad:</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto mb-8">
-          {[
-            "Un mal cálculo de precios",
-            "Un préstamo mal tomado",
-            "Una expansión sin capital suficiente",
-            "Un año retirando dinero sin estructura",
-          ].map((item) => (
-            <div class="flex items-center gap-2 p-3 rounded-lg" style={`background-color: ${siteConfig.colors.primary}`}>
-              <span class="text-base" style="color: #CC4B43">✕</span>
-              <span class="text-xs sm:text-sm" style="color: #94a3b8">{item}</span>
-            </div>
-          ))}
-        </div>
-        <p class="text-base font-bold mb-2" style="color: #cbd5e1">Eso cuesta mucho más.</p>
-        <p class="text-sm" style="color: #64748b">Esto no es un gasto.</p>
-        <p class="text-lg font-bold mt-1" style="color: #f1f5f9">Es evitar errores costosos y ganar <span style={`color: ${siteConfig.colors.accent}`}>claridad.</span></p>
       </div>
     </div>
   </div>
@@ -324,15 +323,6 @@ const wa = `https://wa.me/${siteConfig.cta.whatsappNumber.replace(/\D/g, '')}`;
   .programa-pain-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(247, 215, 20, 0.08);
-  }
-
-  /* Price card glow pulse */
-  .programa-price-card {
-    animation: priceGlow 3s ease-in-out infinite;
-  }
-  @keyframes priceGlow {
-    0%, 100% { box-shadow: 0 0 30px rgba(247, 215, 20, 0.05); }
-    50% { box-shadow: 0 0 50px rgba(247, 215, 20, 0.15); }
   }
 
   /* CTA button pulse */

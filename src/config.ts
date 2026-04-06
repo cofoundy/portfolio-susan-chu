@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Susan Chu Wu",
-  title: "Coach de Finanzas Personales Certificada",
+  title: "Experta en Finanzas Personales y de Negocio",
   description:
-    "Susan Chu Wu - Coach de Finanzas Personales Certificada. Fundadora de Finitips y Ahorra con la China.",
+    "Susan Chu Wu - Experta en Finanzas Personales y de Negocio. Fundadora de Finitips y Ahorra con la China.",
   accentColor: "#F7D714",
   colors: {
     primaryDark: "#1a1008",
@@ -14,27 +14,27 @@ export const siteConfig = {
     surfaceLight: "#2e2014",
   },
   tagline:
-    "Te acompaño a transformar tu relación con el dinero. Sin juicio, sin estrés, a tu ritmo.",
+    "Te acompaño a ordenar tu vida financiera y la de tu negocio, sin que una desordene a la otra.",
   stats: [
-    { value: "10+", label: "Años de Experiencia" },
+    { value: "15+", label: "Años de Experiencia" },
     { value: "Fundadora", label: "Finitips" },
     { value: "14+", label: "Artículos Publicados" },
-    { value: "3", label: "Plataformas" },
+    { value: "30+", label: "Clientes Satisfechos" },
   ],
   quote: {
     text: "La libertad financiera es alcanzable para todos con las herramientas y acompañamiento adecuado.",
     author: "Susan Chu",
   },
   cta: {
-    title: "¿Listo/a para ordenar tu empresa y tus finanzas?",
+    title: "¿Listo/a para ordenar tus finanzas?",
     description:
-      "Si tienes una MYPE y quieres dejar de improvisar con el dinero — tanto en tu negocio como en tu vida personal — agenda una sesión estratégica conmigo.\n\nUn espacio claro, sin juicio y adaptado a tu realidad, donde veremos cómo estructurar tu empresa y tu dinero de forma sostenible.\n\nAgenda tu sesión estratégica gratuita de 30 minutos.",
+      "Si lideras un negocio y quieres dejar de vivir con presión económica — por ti y por las personas que dependen de ti — agenda una sesión estratégica conmigo.\n\nUn espacio claro, sin juicio y adaptado a tu realidad, donde veremos cómo estructurar tu empresa y tu dinero de forma sostenible.\n\nAgenda tu sesión estratégica gratuita de 30 minutos.",
     buttonText: "Agenda aquí tu sesión",
     whatsappNumber: "+51997618020",
   },
   social: {
     email: "info@susanchu.com",
-    instagram: "https://www.instagram.com/ahorraconlachina",
+    instagram: "https://www.instagram.com/finitipsoficial",
     linkedin: "https://linkedin.com/in/susan-chu-941992118",
     phone: "+51 997 618 020",
   },
@@ -50,10 +50,10 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Programa Integral CFO + Coach para MYPES",
+      name: "Gestión Financiera Integral",
       description:
-        "Acompañamiento integral para dueños de <strong>MYPES</strong>: 3 sesiones como <strong>CFO</strong> (flujo de caja, punto de equilibrio, margen real) + 3 sesiones <strong>personales</strong> (separación empresa/persona, retiro sostenible, metas claras).",
-      skills: ["CFO", "Coaching", "MYPES", "Estrategia"],
+        "Acompañamiento estratégico para ordenar las finanzas de tu empresa y tus finanzas personales: sesiones orientadas al <strong>negocio</strong> (flujo de caja, punto de equilibrio, margen real) + sesiones de <strong>finanzas personales</strong> (separación empresa/persona, retiro sostenible, metas claras).",
+      skills: ["Finanzas", "Coaching", "Negocios", "Estrategia"],
     },
     {
       name: "Sesiones 1:1 de Bienestar Financiero",
