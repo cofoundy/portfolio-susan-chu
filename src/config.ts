@@ -33,7 +33,7 @@ export const siteConfig = {
     whatsappNumber: "+51997618020",
   },
   social: {
-    email: "info@susanchu.com",
+    email: "susanchu@finitips.com",
     instagram: "https://www.instagram.com/finitipsoficial",
     linkedin: "https://linkedin.com/in/susan-chu-941992118",
     phone: "+51 997 618 020",
