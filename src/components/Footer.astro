@@ -16,16 +16,18 @@ import { siteConfig } from "../config";
 
       <div class="flex gap-3">
         {siteConfig.social?.email && (
-          <a
-            href={`mailto:${siteConfig.social.email}`}
-            aria-label="Email"
-            class="icon-hover w-10 h-10 rounded-full flex items-center justify-center border"
+          <button
+            type="button"
+            data-email={siteConfig.social.email}
+            class="copy-email icon-hover w-10 h-10 rounded-full flex items-center justify-center border relative"
             style={`border-color: ${siteConfig.colors.primaryLight}; color: #94a3b8`}
+            aria-label="Copiar correo"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
-          </a>
+            <span class="copy-tooltip">¡Correo copiado!</span>
+          </button>
         )}
         {siteConfig.social?.instagram && (
           <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram"

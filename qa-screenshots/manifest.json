@@ -1,6 +1,6 @@
 {
   "url": "https://susanchu.com",
-  "timestamp": "2026-04-06T17:17:35.607Z",
+  "timestamp": "2026-04-08T16:21:57.832Z",
   "desktop": {
     "viewport": {
       "width": 1280,
@@ -15,13 +15,13 @@
         "file": "desktop-hero.png",
         "section": "hero",
         "height": 612,
-        "fileSize": "153KB"
+        "fileSize": "152KB"
       },
       {
         "file": "desktop-programa.png",
         "section": "programa",
         "height": 4330,
-        "fileSize": "505KB"
+        "fileSize": "508KB"
       },
       {
         "file": "desktop-about.png",
@@ -76,7 +76,7 @@
         "file": "mobile-hero.png",
         "section": "hero",
         "height": 933,
-        "fileSize": "109KB"
+        "fileSize": "110KB"
       },
       {
         "file": "mobile-programa.png",
@@ -88,7 +88,7 @@
         "file": "mobile-about.png",
         "section": "about",
         "height": 1040,
-        "fileSize": "85KB"
+        "fileSize": "86KB"
       },
       {
         "file": "mobile-projects.png",

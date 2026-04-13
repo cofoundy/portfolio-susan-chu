@@ -56,6 +56,32 @@ import "../styles/global.css";
       document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale").forEach((el) => {
         observer.observe(el);
       });
+
+      // Copy email to clipboard
+      document.querySelectorAll(".copy-email").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const email = btn.getAttribute("data-email");
+          if (!email) return;
+          try {
+            await navigator.clipboard.writeText(email);
+          } catch {
+            // Fallback for older browsers
+            const ta = document.createElement("textarea");
+            ta.value = email;
+            ta.style.position = "fixed";
+            ta.style.opacity = "0";
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand("copy");
+            document.body.removeChild(ta);
+          }
+          const tooltip = btn.querySelector(".copy-tooltip");
+          if (tooltip) {
+            tooltip.classList.add("show");
+            setTimeout(() => tooltip.classList.remove("show"), 1500);
+          }
+        });
+      });
     </script>
   </body>
 </html>
